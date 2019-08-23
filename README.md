@@ -17,5 +17,5 @@ Please update the ``accountInfo.json`` file in ``/data`` with the user email and
 ## Output file
 After the test is ran, there will be two output files generated from the tests. The output files are located in the ``results`` folder
 The file names are: 
-1. topFiveListingWithClickingRows.json
-2. topFiveListingWithNextBtn.json
+1. ``topFiveListingWithClickingRows.json``
+2. ``topFiveListingWithNextBtn.json``
