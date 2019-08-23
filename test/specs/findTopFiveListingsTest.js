@@ -1,13 +1,13 @@
 import HomePage from './../../PageObject/Home.page';
-import { exportResultsToJson } from './../../helper/helper';
+import { exportResultsToJson, createDirectory } from './../../helper/helper';
 
 describe('Search for 5 most expansive sale listings in NYC', () => {
+
     beforeEach('login step', ()=> {
         HomePage.openUrl('https://www.compass.com/search/sales/nyc/');
         HomePage.loginBtn.click();
         HomePage.loginModal.login();
-        HomePage.waitForMainBodyLoaded();
-
+        HomePage.waitForMainBodyLoaded();    
     });
 
     afterEach('logout step', ()=> {

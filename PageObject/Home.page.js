@@ -40,7 +40,7 @@ class HomePage extends Page {
         const optionObj = {
             'allManhattanOption': this.allManhattanOption.click()
         }
-        optionObj[filterOption];
+        optionObj[filterOption]
     }
 
 

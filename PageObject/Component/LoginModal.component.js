@@ -1,3 +1,5 @@
+import { context } from './../../data/context';
+
 class LoginModal {
     constructor(element) {
         this.element = element;
@@ -9,8 +11,8 @@ class LoginModal {
     get submitBtn() { return this.element.$('form > fieldset > div > div > button'); }
 
     login() {
-        this.emailInput.setValue('compass9012@gmail.com');
-        this.passwordInput.setValue('Takehome1234567890');
+        this.emailInput.setValue(context.accountInfo.user.email);
+        this.passwordInput.setValue(context.accountInfo.user.password);
         this.submitBtn.click();
     }
 }
