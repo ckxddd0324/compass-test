@@ -3,6 +3,7 @@
 # Installation 
 - Node is installed
 	- To install Node for unix based OS [https://nodejs.org/en/download/package-manager/](https://nodejs.org/en/download/package-manager/)
+	- Suggested Node version- 10.16.3(LTS version) or higher
 	- To install Node on mac [https://nodejs.org/en/download/](https://nodejs.org/en/download/) OR
 	- Install homebrew [https://brew.sh/](https://brew.sh/)
 	- Run ``brew install node`` after homebrew installed
