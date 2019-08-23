@@ -7,15 +7,14 @@ describe('Search for 5 most expansive sale listings in NYC', () => {
         HomePage.loginBtn.click();
         HomePage.loginModal.login();
         HomePage.waitForMainBodyLoaded();
+
     });
 
     afterEach('logout step', ()=> {
-
+        browser.deleteCookies();
     });
 
     it('looping on opening each listing and get the listing url from listing iframe', () => {
-
-
         // TODO: go to the 'https://www.compass.com/search/sales/nyc/' again
         // because once the user is logined, the url param is set with multiple location
         // including Long island and westchester ny
@@ -36,11 +35,6 @@ describe('Search for 5 most expansive sale listings in NYC', () => {
     });
 
     it('looping on opening each listing and get the listing url from listing iframe', () => {
-        HomePage.openUrl('https://www.compass.com/search/sales/nyc/');
-        HomePage.loginBtn.click();
-        HomePage.loginModal.login();
-        HomePage.waitForMainBodyLoaded();
-
         // TODO: go to the 'https://www.compass.com/search/sales/nyc/' again
         // because once the user is logined, the url param is set with multiple location
         // including Long island and westchester ny

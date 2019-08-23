@@ -113,16 +113,14 @@ class HomePage extends Page {
     }
     
     loopingOnListViewWithNextBtn(listingCount) {
-        $(`div.ag-body-viewport-wrapper > div > div > div:nth-child(${rowNum})`).click();
+        $(`div.ag-body-viewport-wrapper > div > div > div:nth-child(1)`).click();
 
         const exportData = [];
 
         for(let x = 1; x < listingCount; x++) {
             const obj = {}
             // listing row
-            $(`div.ag-body-viewport-wrapper > div > div > div:nth-child(${x})`).click();
             //switch to listing iframe
-
             this.switchToSecondaryFrame();
             obj[`Top ${x.toString()} price`] = this.listingFramePrice.getText();
 
