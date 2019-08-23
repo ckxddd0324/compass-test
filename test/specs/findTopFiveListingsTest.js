@@ -28,7 +28,9 @@ describe('Search for 5 most expansive sale listings in NYC', () => {
         const exportData = HomePage.loopOnListingRow(6);
 
         // print the top 5 listing on the console
+        console.log('******Test 1 Result Output******')
         console.log(JSON.stringify(exportData, null, 4));
+        console.log('**************END********************')
 
         // export the top 5 listing to json
         exportResultsToJson('topFiveListingWithClickingRows', exportData);
@@ -46,6 +48,10 @@ describe('Search for 5 most expansive sale listings in NYC', () => {
 
         //click first row from the listing view
         const exportData = HomePage.loopingOnListViewWithNextBtn(6);
+
+        console.log('******Test 2 Result Output******')
+        console.log(JSON.stringify(exportData, null, 4));
+        console.log('**************END********************')
 
         exportResultsToJson('topFiveListingWithNextBtn', exportData);
     });
